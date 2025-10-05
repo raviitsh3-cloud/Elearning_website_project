@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    
+    background: var(--bg);
+    color: #0f172a
+}
+
+.wrapperr {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.flex {
+    display: flex
+}
+
+.between {
+    justify-content: space-between
+}
+
+.gap-2 {
+    gap: 0.75rem
+}
+
+
+.site-header {
+    background: transparent;
+    padding: 0.6rem 0
+}
+
+
+
+
+
+
+
+
+.hamburger {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 1.2rem
+}
+
+
+.auth-grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem 0
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem
+}
+
+.para p {
+    font-size: 1.1rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+    max-width: 21rem;
+}
+
+
+.hero img {
+    max-width: 100%;
+    display: block;
+    margin-top: 1rem
+}
+
+
+.card {
+    background: var(--card);
+    padding: 1.6rem;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 30px rgba(16, 24, 40, 0.06)
+}
+
+.card h2 {
+    margin-top: 0
+}
+
+.form .field {
+    margin-top: 0.9rem
+}
+
+.form label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem
+}
+
+.form input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid #e6e9ef
+}
+
+.form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid #e6e9ef
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem
+}
+
+.actions {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center
+}
+
+
+
+
+.muted {
+    color: var(--muted);
+    font-size: 0.95rem
+}
+
+#msg {
+    margin-top: 0.75rem;
+    font-size: 0.95rem
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width:900px) {
+    .auth-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        order: 2
+    }
+
+    .card {
+        order: 1
+    }
+}
+
+@media (max-width:700px) {
+    .navlist {
+        display: none
+    }
+
+    .hamburger {
+        display: block
+    }
+}
