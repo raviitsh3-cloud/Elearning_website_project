@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">
+                <img src="images/logo.png">
+            </a>
+
+
+            <!--Desktop Menu-->
+
+            <ul class="navlist flex gap-3">
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Notes</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="/courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacts</a>
+                </li>
+            </ul>
+
+            <div class="desktop-action flex gap-2">
+                <a href="signup.html" class="btn">
+                    Sign in
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+                <a href="#" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <ul class="mobile-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Notes</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="/courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacts</a>
+                </li>
+                <li>
+                    <a href="signup.html" class="btn">
+                        Sign in
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="wrapperr">
+        <section class="auth-grid">
+            <div class="hero">
+                <h1>Welcome to Skill Era</h1>
+                <p>Join our community to access courses, notes and live sessions.</p>
+                <img src="/images/web.png" alt="learning illustration" />
+            </div>
+
+
+            <div class="card">
+                <h2>Create account</h2>
+
+
+                <form id="signupForm" class="form" autocomplete="off">
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" required minlength="2" placeholder="Your name">
+                    </div>
+
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="you@example.com">
+                    </div>
+
+
+                    <div class="field two-col">
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" required minlength="6"
+                                placeholder="Minimum 6 characters">
+                        </div>
+                        <div>
+                            <label for="confirm">Confirm password</label>
+                            <input id="confirm" name="confirm" type="password" required placeholder="Re-type password">
+                        </div>
+                    </div>
+
+
+                    <div class="field">
+                        <label for="phone">Phone (optional)</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210">
+                    </div>
+
+
+                    <div class="field actions">
+                        <button type="submit" class="btn">Sign up</button>
+                        
+                    </div>
+
+
+                    <p class="muted">Already have an account? <a href="login.html">Sign in</a></p>
+
+
+                    <div id="signupMsg"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <!--footer part-->
+    <footer>
+
+        <div class="footer-container">
+            <div class="flex wrapper gap-4">
+                <div class="footer-wrapper">
+                    <a href="#" class="logo">
+                        <img src="images/logo.png">
+                    </a>
+
+                    <p class="mt-one-half">
+                        Let's Get some knowledge with<br>
+                        Knowledge Hub.
+                    </p>
+
+                    <div class="flex gap-2 mt-one-half">
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>Main</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Home</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>Learn</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Courses</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Blog</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Notes</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>Notes(language)</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Java</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Python</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">C Language</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">C++</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js">
+
+        
+        
+    </script>
+
+    
+</body>
+
+</html>
